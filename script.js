@@ -62,6 +62,7 @@ const winner = () =>{
             if(pos1 == pos2 && pos2 == pos3){
                 console.log("winner", pos1);
                 show(pos1);
+                return true;
         }
         
 
@@ -69,6 +70,7 @@ const winner = () =>{
     }}
 const resetGame = () =>{
     turn0 = false;
+    count = 0;
     enable();
     msgCont.classList.add("hide");
 }
